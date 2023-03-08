@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> calcolatrice </title>
+        <style>
+            button{
+                width: 80%;
+                background-color: green;
+                border-color: green;
+                text-decoration-color: white;
+            }
+            td{
+                width: 30%;
+                height: 20%;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <input id = "numero1", type = "text">
+                </td>
+                <td>
+                    <input id = "numero2", type = "text">
+                </td>
+                <td>
+                    =
+                </td>
+                <td>
+                    <td  style = "border-style: none; height: 30%; width: 33%;" id = "risultato"></td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" id = "+" onclick = somma()>+</button>
+                </td>
+                <td>
+                    <button type="button" id = "-" onclick = differenza()>-</button>
+                </td>
+                <td>
+                    <button type="button" id = "*" onclick = moltiplicazione()>*</button>
+                </td>
+                <td>
+                    <button type="button" id = "/" onclick = divisione()>/</button>
+                </td>
+            </tr>
+        </table>
+        <script>
+            let num1 = document.getElementById("elemento1").value;
+            let num2 = document.getElementById("elemento2").value;
+            let res = null;
+
+            function somma(){
+                if(isNaN(n1) || isNaN(n2) || n1 == "" || n2 == "")
+                    alert("INSERIRE UN VALORE PER ENTRAMBI GLI ELEMENTI");
+        
+                res = parseInt(n1) + parseInt(n2);
+                    
+                document.getElementById("risultato").innerHTML = res;
+            }
+
+            function differenza(){
+                if(isNaN(n1) || isNaN(n2) || n1 == "" || n2 == "")
+                    alert("INSERIRE UN VALORE PER ENTRAMBI GLI ELEMENTI");
+        
+                res = parseInt(n1) - parseInt(n2);
+                    
+                document.getElementById("risultato").innerHTML = res;
+            }
+
+            function moltiplicazione(){
+                if(isNaN(n1) || isNaN(n2) || n1 == "" || n2 == "")
+                    alert("INSERIRE UN VALORE PER ENTRAMBI GLI ELEMENTI");
+        
+                res = parseInt(n1) * parseInt(n2);
+                    
+                document.getElementById("risultato").innerHTML = res;
+            }
+
+            function divisione(){
+                if(isNaN(n1) || isNaN(n2) || n1 == "" || n2 == "")
+                    alert("INSERIRE UN VALORE PER ENTRAMBI GLI ELEMENTI");
+        
+                res = parseInt(n1) / parseInt(n2);
+                    
+                document.getElementById("risultato").innerHTML = res;
+            }
+
+        </script>
+    </body>
+</html>   
