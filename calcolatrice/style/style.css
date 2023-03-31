@@ -1,0 +1,22 @@
+table, tr, td{
+    width: 15%;
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+tr, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+h1{
+    color: blue;
+}
+tr, td{
+    text-align: center;
+    background-color: beige;
+}
+th{
+    text-align: right;
+}
+body{
+    background-color: lightgreen;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- titolo -->
+        <title> Calcolatrice Andrea Finazzi </title>             
+        <!-- foglio di stile -->         
+        <link rel="stylesheet" href="style/style.css">
+        <!-- inclusione classe calcolatrice -->
+        <script src="script/Calcolatrice.js" type="text/javascript"></script>
+        <!-- codice in javascript -->
+        <script type="text/javascript"> 
+           //oggetto calcolatrice
+            const calc = new Calcolatrice();
+        </script>
+    </head>
+    <body>
+        <!-- titolo centrale grande -->
+        <p> <h1 style="text-align: center;"> CALCOLATRICE </h1> </p>
+        <!-- accapo -->
+        <br>
+        <!-- tabella(calcolatrice) -->
+        <table align="center">
+            <!--display-->
+            <tr style = "border: 5px solid;">
+                <th colspan="4"> <label id = "display"></label> </th>
+            </tr>
+            <!-- bottoni CE e C -->
+            <tr>
+                <td colspan="2"> <button id="ce" onclick="calc.cancellaTutto()" style="width:100%; background-color: darkgrey; color: black;"> CE </button></td>
+                <td> <button id="c" onclick="calc.cancellaUnita()" style="width:100%; background-color: darkgrey; color: black;"> C </button></td>
+                <td> <button id="segno" onclick="calc.invertiSegno()" style="width:100%; background-color: darkgrey; color: black;"> +/- </button></td>
+            </tr>
+            <!-- 7, 8, 9 e / -->
+            <tr>
+                <td> <button id="sette" onclick="calc.scrivi(7)" style="width: 100%;"> 7 </button> </td>
+                <td> <button id="otto" onclick="calc.scrivi(8)" style="width: 100%;"> 8 </button> </td>
+                <td> <button id="nove" onclick="calc.scrivi(9)" style="width: 100%;"> 9 </button> </td>
+                <td> <button id="diviso" onclick="calc.scrivi('/')" style="width: 100%; background-color: darkgrey; color: black;"> / </button> </td>
+            </tr>
+            <!-- 4, 5, 6 e * -->
+            <tr>
+                <td> <button id="quattro" onclick="calc.scrivi(4)" style="width: 100%;"> 4 </button> </td>
+                <td> <button id="cinque" onclick="calc.scrivi(5)" style="width: 100%;"> 5 </button> </td>
+                <td> <button id="sei" onclick="calc.scrivi(6)" style="width: 100%;"> 6 </button> </td>
+                <td> <button id="diviso" onclick="calc.scrivi('*')" style="width: 100%;  background-color: darkgrey; color: black;"> * </button> </td>
+            </tr>
+            <!-- 1, 2, 3 e + -->
+            <tr>
+                <td> <button id="sette" onclick="calc.scrivi(1)" style="width: 100%;"> 1 </button> </td>
+                <td> <button id="otto" onclick="calc.scrivi(2)" style="width: 100%;"> 2 </button> </td>
+                <td> <button id="nove" onclick="calc.scrivi(3)" style="width: 100%;"> 3 </button> </td>
+                <td> <button id="piu" onclick="calc.scrivi('+')" style="width: 100%;  background-color: darkgrey; color: black;"> + </button> </td>
+            </tr>
+            <!-- 0, ., = e - -->
+            <tr>
+                <td> <button id="zero" onclick="calc.scrivi(0)" style="width: 100%;"> 0 </button> </td>
+                <td> <button id="punto" onclick="calc.scrivi('.')" style="width: 100%;"> . </button> </td>
+                <td> <button id="uguale" onclick="calc.calcola()" style="width: 100%;  background-color: darkgrey; color: black;"> = </button> </td>
+                <td> <button id="meno" onclick="calc.scrivi('-')" style="width: 100%;  background-color: darkgrey; color: black;"> - </button> </td>
+            </tr>
+        </table>
+    </body>
+</html>
