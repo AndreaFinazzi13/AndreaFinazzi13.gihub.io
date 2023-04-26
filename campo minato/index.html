@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--titolo-->
+        <title> Campo minato Andrea Finazzi </title>
+        <!--collegamento al foglio di stile-->
+        <link rel="stylesheet" href="style/style.css">
+        <!--inclusione script da google-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!--inclusione tre classi create-->
+        <script src="script/script.js"></script>
+        <script src="script/Campo.js"></script>
+        <script src="script/Cella.js"></script>
+    </head>
+    <body>
+        <!--griglia di div-->
+        <table align="center">
+            <tr>
+                <td>
+                    <!--display di visualizzazionw-->
+                    <div class="display">
+                        <!--numero mine presenti nel campo-->
+                        <div id="numMine" class="disp-item"></div>
+                        <!--reset-->
+                        <div class="disp-item" class="reset"><input type="reset"></div>
+                        <!--tempo-->
+                        <div class="disp-item">tempo</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <!--griglia dei div-->
+                <td>
+                    <div id="griglia"></div>
+                </td>
+            </tr>
+            <tr>
+                <!--stato corrente-->
+                <td>
+                    <div id="stato"></div>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
