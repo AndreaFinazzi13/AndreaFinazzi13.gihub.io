@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--titolo-->
+        <title> Campo Minato - Andrea Finazzi</title>
+        <!--inclusione foglio di stile-->
+        <link rel="stylesheet" href="style.css">
+        <!--inclusione jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!--inclusione classe cella-->
+        <script src="scripts/Cella.js"></script>
+        <!--inclusione classe campo-->
+        <script src="scripts/Campo.js"></script>
+        <!--inclusione classe in cui viene eseguito il codice-->
+        <script src="scripts/Script.js"></script>
+    </head>
+    <body>
+        <!--tabella contenente contatore delle mine, tasto reset, campo minato e risultato della partita (vinto/perso)-->
+        <table align="center">
+            <tr>
+                <td>
+                    <div class="intestazione">
+                        <!--numero di mine presenti nel campo-->
+                        <div id="contatoreMine"></div>
+                        <!--tasto di reset del campo-->
+                        <div class="reset"><button onclick="campo.reset()">Resetta Campo</button></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!--campo minato-->
+                    <div id="campo"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!--risultato della partita(vinto/perso)-->
+                    <div id="risultato"></div>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
