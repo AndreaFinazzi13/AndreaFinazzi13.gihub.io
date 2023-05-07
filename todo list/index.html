@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--titolo-->
+        <title>ToDo list - Andrea Finazzi</title>
+        <!--inclusione foglio di stile-->
+        <link rel="stylesheet" href="style.css">
+        <!--inclusione classe evento-->
+        <script src="scripts/evento.js"></script>
+        <!--inclusione classe todo list-->
+        <script src="scripts/todoList.js"></script>
+        <script>
+            //creazione oggetto todo list
+            const todoList = new todoList();          
+        </script>
+    </head>
+    <body>
+        <!--tabella contenente data, descrizione evento, tasto per aggiungere alla lista e tasto per svuotare lista-->
+        <table align="center">
+            <tr>
+                <!--data in cui è fissato l'evento-->
+                <td><input type="date" id="data"></td>
+                <!--descrizione evento-->
+                <td><input type="text" id="descrizione" value="Descrizione attività..."></td>
+                <!--bottone per inserire nuovo evento-->
+                <td><button class="bottone" onclick="todoList.aggiungiEvento()">Aggiungi evento</button></td>
+                <!--tasto per rimuovere tutti gli eventi dalla lista-->
+                <td><button class="bottone" onclick="todoList.rimuoviTutto()">Rimuovi tutto</button></td>
+            </tr>
+        </table>
+        <!--tabella in cui visualizzare gli eventi appartenenti a particolari categorie-->
+        <table align="center" style="width: 50%;" >
+            <tr>
+                <!--bottone per visualizzare tutti gli eventi completati-->
+                <td><button class="tipo" onclick="todoList.visualizzaGruppoEventi('completati')">Visualizza eventi completati</button></td>
+                <!--bottone per visualizzare tutti gli eventi non completati-->
+                <td><button class="tipo" onclick="todoList.visualizzaGruppoEventi('non completati')">Visualizza eventi non completati</button></td>
+                <!--bottone per visualizzare tutti gli eventi-->
+                <td><button class="tipo" onclick="todoList.visualizzaGruppoEventi('tutto')">Visualizza tutti gli eventi</button> </td>
+            </tr>
+        </table>
+
+        <!--tabella grafica-->
+        <table align="center", id="todoList">
+           
+        </table>
+    </body>
+</html>
