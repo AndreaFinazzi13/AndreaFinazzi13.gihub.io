@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--titolo-->
+        <title> ToDo List - Andrea Finazzi </title>
+        <!--inclusione foglio di stile-->
+        <link rel="stylesheet" href="style.css">
+        <!--inclusione classe singolo evento-->
+        <script src="scripts/Evento.js"></script>
+        <!--inclusione classe ToDo List-->
+        <script src="scripts/ToDoList.js"></script>
+        <!--costruzione oggetto di tipo ToDo List-->
+        <script> lista=new ToDoList(); </script>
+    </head>
+    <body>
+        <!--tabella in cui inserire l'input dell'evento-->
+        <table align="center" name="tabInput" style="width: 40%;" >
+            <tr>
+                <!--descrizione dell'evento-->
+                <td><input type="text" id="descrizione"></td>
+                <!--data di scadenza dell'evento-->
+                <td><input type="date" id="data" value=""></td>
+                <!--inserimento evento nella lista-->
+                <td><button class="bottone" onclick="lista.aggiungiEvento()">Aggiungi evento</button></td>
+                <!--svuotamento lista-->
+                <td><button class="bottone" onclick="lista.svuotaLista()">Svuota lista</button></td>
+            </tr>
+        </table>
+        <!--tabella per decidere che eventi visualizzare-->
+        <table align="center" style="width: 80%;" >
+            <tr>
+                <!--bottone per visualizzare eventi non completati-->
+                <td><button class="bottone" onclick="lista.visualizzaEventi('nonCompletati')">Visualizzazione di tutti gli eventi non completati</button></td>
+                <!--bottone per visualizzare eventi completati-->
+                <td><button class="bottone" onclick="lista.visualizzaEventi('completati')">Visualizzazione di tutti gli eventi completati</button></td>
+                <!--bottone per visualizzare tutti gli eventi-->
+                <td><button class="bottone" onclick="lista.visualizzaEventi('tutti')">Visualizzazione di tutti gli eventi</button> </td>
+                <!--bottone per visualizzare gli eventi urgenti-->
+                <td><button class="bottone" onclick="lista.visualizzaEventi('urgenti')">Visualizzazione di tutti gli eventi urgenti</button> </td>
+            </tr> 
+        </table>
+        <!--tabella in cui si visualizzano tutti gli eventi della ToDo List-->
+        <table align="center", id="lista" style="width: 40%; border:1px solid green" >
+           
+        </table>
+    </body>
+</html>
