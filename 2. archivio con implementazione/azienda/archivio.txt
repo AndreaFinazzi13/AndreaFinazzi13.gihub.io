@@ -1,0 +1,7 @@
+Ufficio [id=1, numeroPostazioni=, nomeUfficio=programmazione, piano=1, sigla=PR2212, nomeResponsabile=Luga Sbesh]
+Ufficio [id=0, numeroPostazioni=, nomeUfficio=gestione azeinda, piano=0, sigla=AA014, nomeResponsabile=Luca Gobbetto]
+Dipendente[dataNascita= 1970-01-01, dataAssunzione=1970-01-01, oreLavoroSettimanali=40,nome=Andrea, cognome=Finazzi, indirizzo=Via Leoncavallo 13, reparto=PR22]
+Dipendente[dataNascita= 1970-01-01, dataAssunzione=1970-01-01, oreLavoroSettimanali=38,nome=Pietro, cognome=Brandovarsi, indirizzo=Via Rossi 16, reparto=AA01]
+Dipendente[dataNascita= 1970-01-01, dataAssunzione=1970-01-01, oreLavoroSettimanali=40,nome=Riccardo, cognome=Mognoni, indirizzo=Via Depretis 113, reparto=PR22]
+Dipendente[dataNascita= 1970-01-01, dataAssunzione=1970-01-01, oreLavoroSettimanali=42,nome=Luca, cognome=Bertiato, indirizzo=Via Verdi 3, reparto=PR22]
+Dipendente[dataNascita= 1970-01-01, dataAssunzione=1970-01-01, oreLavoroSettimanali=40,nome=Simone, cognome=Radice, indirizzo=Via Della Liberazione 42, reparto=AA01]
